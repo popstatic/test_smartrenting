@@ -22,7 +22,7 @@ function upvote(id){
   $.ajax({
   type: "POST",
   url: "/vote/"+id
-}).done(function() {
+}).then(function() {
     location.reload(); 
   });
  

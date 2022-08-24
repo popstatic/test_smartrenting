@@ -21,9 +21,12 @@
 function upvote(id){
   $.ajax({
   type: "POST",
-  url: "/vote/"+id
+  url: "/vote/"+id,
+  success: function () {
+            location.reload(); 
+        }
 })
-    location.reload(); 
+    
 }
 
 </script>

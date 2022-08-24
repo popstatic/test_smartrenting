@@ -23,7 +23,8 @@ function upvote(id){
   type: "POST",
   url: "/vote/"+id
 });
-location.reload();  
+currval = parseInt($("#"+id).text())
+$("#"+id).text(currval+1) ;
 }
 
 </script>
